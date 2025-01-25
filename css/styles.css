@@ -59,6 +59,7 @@ h6 {
 .breakable {
     position: relative;
     transition: opacity 0.2s;
+    height: fit-content;
 }
 
 .breakable-progress {
