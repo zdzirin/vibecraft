@@ -1,0 +1,142 @@
+html {
+    font-family: "Minecraft", sans-serif;
+    cursor: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Blox BRK", sans-serif;
+}
+
+.cursor {
+    position: absolute;
+    transform: rotate(-90deg);
+    transition: transform 0.2s;
+    pointer-events: none;
+}
+
+.click {
+    transform: rotate(-135deg);
+}
+
+.header-container {
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    min-height: 250px;
+}
+
+.title {
+    font-size: 6rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.free-boobs {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.tagline {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5em;
+    color: #f1fc0d;
+    margin: 0;
+    transform: translate(10%) rotate(-10deg);
+}
+
+.breakable {
+    position: relative;
+    transition: opacity 0.2s;
+}
+
+.breakable-progress {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: darken;
+    pointer-events: none;
+}
+
+.broken {
+    opacity: 0;
+}
+
+.content {
+    max-width: 600px;
+    width: calc(90% - 2rem);
+    padding: 1rem;
+    border: 10px solid #73a765;
+    font-size: 1.5rem;
+    color: #f1fc0d;
+    font-family: serif;
+}
+
+nav a {
+    background: #f1fc0d;
+    margin: 0px;
+    padding: 0rem 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-container img {
+        width: 100px;
+        height: 100px;
+    }
+    .title {
+        font-size: 4rem;
+    }
+
+    .content {
+        margin-top: 2rem;
+        font-size: 1rem;
+        border-width: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .breakable > img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .free-boobs {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .free-boobs img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title-container {
+        width: 100%;
+    }
+
+    .tagline {
+        font-size: 0.75rem;
+
+        transform: translate(-5%) rotate(-10deg);
+    }
+}

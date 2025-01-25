@@ -1,0 +1,50 @@
+body {
+    --mcw-sky-base: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/17/Light_background_clouds_distance2.png/revision/latest?format=original);
+    --mcw-grass-base: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/42/Light_background_grass.png/revision/latest?format=original);
+    --mcw-snow-base: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/64/Light_background_snowy_grass.png/revision/latest?format=original);
+    --mcw-snowfall: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/84/Winter-snow-background.gif/revision/latest?format=original);
+    --mcw-header-background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0) 0,
+            rgba(0, 0, 0, 0.1) 158px,
+            rgba(255, 255, 255, 0) 0
+        ),
+        var(--mcw-grass-base),
+        linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0) 168px,
+            rgb(205, 187, 159) 168px,
+            rgb(205, 187, 159) 180px,
+            rgb(120, 177, 242) 268px
+        );
+    --mcw-deepslate: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/bc/Light_background_deepslate.png/revision/latest?format=original);
+    --mcw-deepslate-transition: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b8/Light_background_deepslate_transition.png/revision/latest?format=original);
+    --header-background-image-height: 160px;
+}
+
+body {
+    background: var(--mcw-deepslate);
+}
+
+.bg-header {
+    background: var(--mcw-header-background);
+    min-width: inherit;
+    height: 400px;
+    position: relative;
+    background-position: bottom left !important;
+    background-repeat: repeat-x;
+    margin-bottom: -350px;
+    background-size: auto, 160px, auto !important;
+    z-index: -1;
+}
+
+.bg-header::before {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: var(--header-background-image-height);
+    position: absolute;
+    width: 100%;
+    background: var(--mcw-sky-base) right 6px repeat-x;
+    position: relative;
+}

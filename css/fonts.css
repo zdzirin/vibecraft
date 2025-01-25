@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "../Minecraft";
+    src: url("fonts/Minecraft/MinecraftRegular.otf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../fonts/Minecraft/MinecraftBold.otf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../fonts/Minecraft/MinecraftItalic.otf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: url("../fonts/Minecraft/MinecraftBoldItalic.otf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Blox BRK";
+    src: url("../fonts/BloxBrk/BloxBrk.ttf") format("truetype");
+}
